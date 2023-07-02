@@ -317,7 +317,7 @@ body {
 @media (min-width: 320px) and (max-width: 480px) {
   .navbar {
     position: relative;
-    background-color: #00b289;
+    background-color: #8f1409;
   }
   .navbar .navbar-toggle {
     position: absolute;
