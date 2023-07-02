@@ -1,0 +1,459 @@
+/*!*********************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/style.scss ***!
+  \*********************************************************************************************************/
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #fff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0.5rem;
+  margin-top: 1rem;
+}
+.navbar .navbar-toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.navbar .navbar-toggle .navbar-item ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.navbar .navbar-toggle .navbar-btn .login {
+  background-color: #f8db62;
+  margin-right: 1rem;
+  border-radius: 10%;
+  padding: 0.5rem;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+.navbar .navbar-toggle .navbar-btn .free {
+  background-color: #00b289;
+  border-radius: 10%;
+  padding: 0.5rem;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+.navbar .hamburger {
+  display: none;
+}
+
+.section-pertama {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.section-pertama .plan-pricing {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5rem 0;
+  width: 70%;
+}
+.section-pertama .plan-pricing .chose-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.section-pertama .card {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 70%;
+}
+.section-pertama .card .card-workflow {
+  border: 1px solid black;
+  width: 20rem;
+  text-align: start;
+  padding: 2rem;
+}
+.section-pertama .card .card-workflow h3 {
+  margin-bottom: 1rem;
+}
+.section-pertama .card .card-workflow .price {
+  margin-bottom: 1rem;
+}
+.section-pertama .card .card-workflow .feedback {
+  text-align: start;
+  margin: 1rem 0;
+}
+.section-pertama .card .card-workflow .feedback p {
+  line-height: 2rem;
+}
+.section-pertama .card .card-workflow .feedback p img {
+  width: 15px;
+  height: 15px;
+  color: #f8db62;
+}
+.section-pertama .card .card-workflow button {
+  background-color: #00b289;
+  width: 100%;
+  padding: 1rem;
+}
+.section-pertama .card .card-workflow-plus {
+  border: 1px solid black;
+  position: relative;
+  width: 20rem;
+  text-align: start;
+  padding: 2rem;
+}
+.section-pertama .card .card-workflow-plus .view-populer {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.section-pertama .card .card-workflow-plus .view-populer img {
+  width: 120px;
+  height: 120px;
+}
+.section-pertama .card .card-workflow-plus h3 {
+  margin-bottom: 1rem;
+}
+.section-pertama .card .card-workflow-plus .price {
+  margin-bottom: 1rem;
+}
+.section-pertama .card .card-workflow-plus .feedback {
+  text-align: start;
+  margin: 1rem 0;
+}
+.section-pertama .card .card-workflow-plus .feedback p {
+  line-height: 2rem;
+}
+.section-pertama .card .card-workflow-plus .feedback p img {
+  width: 15px;
+  height: 15px;
+  color: #f8db62;
+}
+.section-pertama .card .card-workflow-plus button {
+  background-color: #00b289;
+  width: 100%;
+  padding: 1rem;
+}
+
+.super-charge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+.super-charge .super-main {
+  width: 70%;
+}
+.super-charge .super-main h2 {
+  text-align: center;
+}
+.super-charge .super-main .collaborator {
+  margin-top: 1rem;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px black;
+}
+.super-charge .super-main .partner {
+  margin: 1rem 0;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px black;
+}
+.super-charge .super-main .bonsai-tax {
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px black;
+}
+
+.advertisement {
+  width: 70%;
+  margin: 3rem auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  background-color: rgba(76, 77, 95, 0.1);
+  line-height: 3rem;
+}
+.advertisement .content p {
+  font-size: 2em;
+}
+.advertisement .content p span {
+  color: red;
+}
+.advertisement button {
+  padding: 1rem;
+  font-size: 0.8em;
+  background-color: #00b289;
+  border-radius: 5px;
+}
+
+.questions .question-main {
+  width: 70%;
+  margin: 0 auto;
+}
+.questions .question-main h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.questions .question-main span {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+}
+.questions .question-main span img {
+  width: 20px;
+  height: 20px;
+}
+
+.footer {
+  margin-top: 7rem;
+  margin-bottom: 2rem;
+}
+.footer .footer-main {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .footer-main .product {
+  line-height: 1.5rem;
+}
+.footer .footer-main .product h3 {
+  margin-bottom: 1rem;
+  font-size: 1.2em;
+}
+.footer .footer-main .product ul li {
+  font-size: 0.8em;
+}
+.footer .footer-main .resource {
+  line-height: 1.5rem;
+}
+.footer .footer-main .resource h3 {
+  margin-bottom: 1rem;
+  font-size: 1.2em;
+}
+.footer .footer-main .resource ul li {
+  font-size: 0.8em;
+}
+.footer .footer-main .bonsai {
+  line-height: 1.5rem;
+}
+.footer .footer-main .bonsai h3 {
+  margin-bottom: 1rem;
+  font-size: 1.2em;
+}
+.footer .footer-main .bonsai ul li {
+  font-size: 0.8em;
+}
+
+@media (min-width: 720px) and (max-width: 1000px) {
+  .navbar .navbar-toggle .navbar-item ul {
+    gap: 8px;
+  }
+  .section-pertama .card {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+}
+@media (min-width: 480px) and (max-width: 719px) {
+  .navbar .navbar-toggle .navbar-item ul {
+    gap: 5px;
+  }
+  .navbar .navbar-toggle .navbar-item ul li {
+    font-size: 0.8em;
+  }
+  .navbar .navbar-toggle .navbar-btn .login {
+    margin-right: 0.2rem;
+    border-radius: 10%;
+    padding: 0.3em;
+    font-size: 0.7em;
+    font-weight: bold;
+  }
+  .navbar .navbar-toggle .navbar-btn .free {
+    border-radius: 10%;
+    padding: 0.3em;
+    font-size: 0.7em;
+    font-weight: bold;
+  }
+  .section-pertama .plan-pricing {
+    font-size: 0.7em;
+  }
+  .section-pertama .plan-pricing .chose-main {
+    font-size: 0.69em;
+  }
+  .section-pertama .card {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .navbar {
+    position: relative;
+  }
+  .navbar .navbar-toggle {
+    position: absolute;
+    display: none;
+    top: 68px;
+    right: 0;
+  }
+  .navbar .navbar-toggle.show {
+    transition: all 100s ease-in-out;
+    display: block;
+  }
+  .navbar .navbar-toggle .navbar-main {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background-color: rgba(164, 163, 163, 0.2);
+    height: 100vh;
+    width: 200px;
+    padding: 1em;
+  }
+  .navbar .navbar-toggle .navbar-main .navbar-item ul {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .navbar .navbar-toggle .navbar-main .navbar-item ul li {
+    font-size: 0.8em;
+  }
+  .navbar .navbar-toggle .navbar-main .navbar-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .navbar .navbar-toggle .navbar-main .navbar-btn .login {
+    margin-right: 0.2rem;
+    border-radius: 10%;
+    padding: 0.3em;
+    font-size: 0.7em;
+    font-weight: bold;
+  }
+  .navbar .navbar-toggle .navbar-main .navbar-btn .free {
+    border-radius: 10%;
+    padding: 0.3em;
+    font-size: 0.7em;
+    font-weight: bold;
+  }
+  .navbar .hamburger {
+    display: block;
+  }
+  .section-pertama .plan-pricing {
+    font-size: 0.65em;
+  }
+  .section-pertama .plan-pricing .chose-main {
+    font-size: 0.62em;
+  }
+  .section-pertama .card {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  .section-pertama .card .card-workflow {
+    width: 15rem;
+    text-align: center;
+    padding: 1rem;
+  }
+  .section-pertama .card .card-workflow .feedback {
+    font-size: 0.75em;
+  }
+  .section-pertama .card .card-workflow button {
+    padding: 0.3rem;
+  }
+  .section-pertama .card .card-workflow-plus {
+    width: 15rem;
+    text-align: center;
+    padding: 1rem;
+  }
+  .section-pertama .card .card-workflow-plus .view-populer img {
+    width: 70px;
+    height: 70px;
+  }
+  .section-pertama .card .card-workflow-plus .feedback {
+    font-size: 0.75em;
+  }
+  .section-pertama .card .card-workflow-plus button {
+    padding: 0.3rem;
+  }
+  .super-charge .super-main h2 {
+    font-size: 1em;
+  }
+  .super-charge .super-main .collaborator {
+    font-size: 0.8em;
+  }
+  .super-charge .super-main .partner {
+    font-size: 0.8em;
+  }
+  .super-charge .super-main .bonsai-tax {
+    font-size: 0.8em;
+  }
+  .advertisement {
+    line-height: 1em;
+  }
+  .advertisement .content {
+    font-size: 0.5em;
+  }
+  .advertisement button {
+    font-size: 0.5em;
+    padding: 0.3rem;
+    margin-left: 10px;
+  }
+  .questions .question-main h2 {
+    font-size: 1em;
+  }
+  .questions .question-main span {
+    font-size: 0.75em;
+  }
+  .questions .question-main span img {
+    width: 15px;
+    height: 15px;
+  }
+  .footer .footer-main {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .footer .footer-main .product h3 {
+    font-size: 1em;
+  }
+  .footer .footer-main .product ul li {
+    font-size: 0.7em;
+  }
+  .footer .footer-main .resource h3 {
+    font-size: 1em;
+  }
+  .footer .footer-main .resource ul li {
+    font-size: 0.7em;
+  }
+  .footer .footer-main .bonsai h3 {
+    font-size: 1em;
+  }
+  .footer .footer-main .bonsai ul li {
+    font-size: 0.7em;
+  }
+}
