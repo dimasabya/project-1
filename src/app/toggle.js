@@ -7,9 +7,11 @@ export class Toggle {
     const [str, num] = inp;
     if (this.navbar.classList.contains("show")) {
       this.navbar.classList.remove("show");
+      document.body.style.overflow = this.navbar.classList.contains("show") ? "hidden" : "auto";
     } else {
       this.navbar.classList.add("show");
       const showing = document.querySelector(".show");
+      document.body.style.overflow = this.navbar.classList.contains("show") ? "hidden" : "auto";
     }
   }
   onClick(cb) {

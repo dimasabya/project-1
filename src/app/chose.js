@@ -6,11 +6,8 @@ export class Chose {
   show(str) {
     if (!this.toggle.classList.contains("rotate")) {
       this.toggle.classList.add("rotate");
-      //   const rotate = document.querySelector(".rotate");
-      //   rotate.style.transform = `rotateY(${str}deg)`;
     } else {
       this.toggle.classList.remove("rotate");
-      //   this.rotate.style.transform = `rotateY(0)`;
     }
   }
 
