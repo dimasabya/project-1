@@ -16,7 +16,17 @@
   \************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   run: () => (/* binding */ run)\n/* harmony export */ });\nconst run = (notif, toggle) => {\n  notif.onClick = cb => {\n    if (cb === \"login\") {\n      notif.setNotif(alert(\"belum bisa login\"));\n    } else {\n      notif.setNotif(alert(\"belum bisa mulai\"));\n    }\n  };\n  toggle.onClick(() => {\n    toggle.show(\"block\", 0);\n  });\n};\n\n//# sourceURL=webpack://latihan-project-1/./src/app/app.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   run: () => (/* binding */ run)\n/* harmony export */ });\nconst run = (notif, toggle, choseToggle) => {\n  notif.onClick = cb => {\n    if (cb === \"login\") {\n      notif.setNotif(alert(\"belum bisa login\"));\n    } else {\n      notif.setNotif(alert(\"belum bisa mulai\"));\n    }\n  };\n  toggle.onClick(() => {\n    toggle.show(\"block\", 0);\n  });\n  choseToggle.onClick(() => {\n    choseToggle.show(180);\n  });\n};\n\n//# sourceURL=webpack://latihan-project-1/./src/app/app.js?");
+
+/***/ }),
+
+/***/ "./src/app/chose.js":
+/*!**************************!*\
+  !*** ./src/app/chose.js ***!
+  \**************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   Chose: () => (/* binding */ Chose)\n/* harmony export */ });\nclass Chose {\n  constructor() {\n    this.toggle = document.querySelector(\"#img-toggle\");\n  }\n  show(str) {\n    if (!this.toggle.classList.contains(\"rotate\")) {\n      this.toggle.classList.add(\"rotate\");\n      //   const rotate = document.querySelector(\".rotate\");\n      //   rotate.style.transform = `rotateY(${str}deg)`;\n    } else {\n      this.toggle.classList.remove(\"rotate\");\n      //   this.rotate.style.transform = `rotateY(0)`;\n    }\n  }\n\n  onClick(cb) {\n    this.toggle.addEventListener(\"click\", cb);\n  }\n}\n\n//# sourceURL=webpack://latihan-project-1/./src/app/chose.js?");
 
 /***/ }),
 
@@ -46,7 +56,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.scss */ \"./src/style.scss\");\n/* harmony import */ var _app_app__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./app/app */ \"./src/app/app.js\");\n/* harmony import */ var _app_notif__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./app/notif */ \"./src/app/notif.js\");\n/* harmony import */ var _app_toggle__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app/toggle */ \"./src/app/toggle.js\");\n\n\n\n\nconst notif = new _app_notif__WEBPACK_IMPORTED_MODULE_2__.Notif();\nconst toggle = new _app_toggle__WEBPACK_IMPORTED_MODULE_3__.Toggle();\n(0,_app_app__WEBPACK_IMPORTED_MODULE_1__.run)(notif, toggle);\n\n//# sourceURL=webpack://latihan-project-1/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.scss */ \"./src/style.scss\");\n/* harmony import */ var _app_app__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./app/app */ \"./src/app/app.js\");\n/* harmony import */ var _app_notif__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./app/notif */ \"./src/app/notif.js\");\n/* harmony import */ var _app_toggle__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app/toggle */ \"./src/app/toggle.js\");\n/* harmony import */ var _app_chose__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./app/chose */ \"./src/app/chose.js\");\n\n\n\n\n\nconst notif = new _app_notif__WEBPACK_IMPORTED_MODULE_2__.Notif();\nconst toggle = new _app_toggle__WEBPACK_IMPORTED_MODULE_3__.Toggle();\nconst choseTogle = new _app_chose__WEBPACK_IMPORTED_MODULE_4__.Chose();\n(0,_app_app__WEBPACK_IMPORTED_MODULE_1__.run)(notif, toggle, choseTogle);\n\n//# sourceURL=webpack://latihan-project-1/./src/index.js?");
 
 /***/ }),
 

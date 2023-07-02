@@ -1,4 +1,4 @@
-export const run = (notif, toggle) => {
+export const run = (notif, toggle, choseToggle) => {
   notif.onClick = (cb) => {
     if (cb === "login") {
       notif.setNotif(alert("belum bisa login"));
@@ -9,5 +9,9 @@ export const run = (notif, toggle) => {
 
   toggle.onClick(() => {
     toggle.show("block", 0);
+  });
+
+  choseToggle.onClick(() => {
+    choseToggle.show(180);
   });
 };

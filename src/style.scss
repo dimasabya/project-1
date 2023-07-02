@@ -100,6 +100,15 @@ body {
       justify-content: center;
       align-items: center;
       gap: 20px;
+      .toggle {
+        .img-toggle {
+          width: 40px;
+          height: 40px;
+          &.rotate {
+            transform: rotateY(180deg);
+          }
+        }
+      }
     }
   }
 
